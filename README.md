@@ -28,6 +28,24 @@ This project develops a machine learning model to classify resumes into categori
     ```bash
     pip install -r requirements.txt
     ```
+## Data 
+The dataset for this project is collected by scraping resume data from LiveCareer.com. Approximately 8,350 resumes are collected across 10 job categories including Python Developer, Java Developer, Web Developer, Database Administrator, Security Analyst, Project Manager, Frontend Developer, Network Administrator, and Software Developer.
+
+## Data Collection Process
+
+Resumes are scraped using Selenium with the Chrome WebDriver. The process involves navigating to specific URLs constructed for each job category and extracting links to individual resumes. Here’s a brief outline of the steps involved in the scraping process:
+
+Set up Selenium WebDriver: Configure Selenium with ChromeDriver to interact with web pages.
+Navigate through job categories: For each category, generate URLs to navigate through pages of listings on LiveCareer.com.
+Extract resume links: Collect the href attribute of each resume link on the listing pages.
+Visit each resume link: For each extracted link, navigate to the corresponding page to access the full resume.
+Extract resume text: Parse the HTML content of each resume page to extract the textual data.
+Store data: Save the collected resume texts and their corresponding categories to a DataFrame, then export to a CSV file named Resume.csv.
+This scraping process ensures the collection of a diverse and extensive dataset that represents various sectors in the job market, suitable for training our classification models.
+
+## Data Structure
+
+The resulting dataset comprises columns for Resume text and the corresponding Category. It's stored in a CSV file to facilitate easy access and manipulation for training machine learning models.
 
 ## Usage
 
