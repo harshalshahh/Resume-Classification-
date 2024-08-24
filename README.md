@@ -4,6 +4,7 @@ This project develops a machine learning model to classify resumes into categori
 
 ## Table of Contents
 - [Installation](#installation)
+- [Data](#Data)
 - [Usage](#usage)
 - [Model Training](#model-training)
 - [Contributing](#contributing)
