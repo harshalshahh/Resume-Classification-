@@ -52,8 +52,11 @@ This project develops a machine learning model to classify resumes into categori
 This project includes several classification models:
 
 Support Vector Machine (SVM): Used for high accuracy in categorical classification.
+
 Multinomial Naive Bayes: Effective for word counts or frequency data.
+
 Random Forest: Provides a good benchmark for complex classification tasks.
+
 DistilBERT: Not implemented in the project's current scope but recommended for future scaling to handle contextual embeddings from text data.
 
 ## Performance
